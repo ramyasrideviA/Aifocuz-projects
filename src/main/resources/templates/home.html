@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Explore Beautiful Destinations</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <!-- 🌍 Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Travel Explorer</div>
+        <ul class="nav-links">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/packages">Packages</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🏖 Hero Section -->
+    <section class="hero h1" >
+        <h1>Explore Beautiful Destinations</h1>
+        <p>Discover the wonders of the world with us.</p>
+        <a href="/packages" class="btn">View Packages</a>
+
+    </section>
+
+    <!-- 🌅 Featured Places -->
+    <section class="featured">
+        <div class="card">
+            <img src="/images/tajmahal.jpg" alt="Taj Mahal" class="place-img">
+            <h3>Taj Mahal</h3>
+            <p>Iconic monument in Agra</p>
+        </div>
+        <div class="card">
+            <img src="/images/goa.jpg" alt="Goa Beach" class="place-img">
+            <h3>Goa Beach </h3>
+            <p>Sunny paradise by the sea</p>
+        </div>
+    </section>
+</body>
+</html>

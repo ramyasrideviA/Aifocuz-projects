@@ -1,0 +1,103 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    background: url('/images/beach.jpg') center/cover no-repeat;
+    height: 600px;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    top:-70px;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+    transform: scale(1.1);
+}
+
+.featured {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: -450px; /* pulls cards upward to overlap the beach image */
+    position: relative;
+    z-index: 2; /* ensures cards appear above the background */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+}
+.place-img {
+    width: 300px;   /* fixed width */
+    height: 200px;  /* fixed height */
+    object-fit: cover; /* keeps aspect ratio, crops neatly */
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.place-img:hover {
+    transform: scale(1.05);
+}
+.hero h1, .hero p {
+    position: relative;
+    top: -100px; /* moves both upward */
+}.card h3 {
+    color: #000000; /* white text for titles */
+    font-weight: bold;
+}
+
+.card p {
+    color: #000000; /* light gray for descriptions */
+}
+.logo {
+    font-size: 28px;   /* makes the text larger */
+    font-weight: bold; /* makes it stand out */
+    color: white; /* keeps it white */
+    letter-spacing: 2px; /* optional: adds spacing between letters */
+}
+

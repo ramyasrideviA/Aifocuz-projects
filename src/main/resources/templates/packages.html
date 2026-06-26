@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Our Travel Packages - Travel Explorer</title>
+    <link rel="stylesheet" th:href="@{/css/packages.css}">
+</head>
+<body>
+    <!-- 🌍 Navbar -->
+    <nav class="navbar">
+        <div class="logo">Travel Explorer</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/packages" class="active">Packages</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🧳 Packages Section -->
+    <section class="packages-section">
+        <h1>Our Travel Packages</h1>
+        <p>Choose your dream destination and book your trip with us.</p>
+
+        <table class="packages-table">
+            <thead>
+                <tr>
+                    <th>Destination</th>
+                    <th>Duration</th>
+                    <th>Food</th>
+                    <th>Hotel</th>
+                    <th>Transport</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Taj Mahal<br><small>Agra, Uttar Pradesh</small></td>
+                    <td>2D / 1N</td>
+                    <td>Breakfast + Dinner</td>
+                    <td>3★ Hotel</td>
+                    <td>AC Bus</td>
+                    <td>₹4,999 / Person</td>
+                    <td><a href="/contact?place=Taj Mahal" class="book-btn">Book Now</a></td>
+                </tr>
+                <tr>
+                    <td>Goa Beach<br><small>Goa</small></td>
+                    <td>4D / 3N</td>
+                    <td>Breakfast</td>
+                    <td>Beach Resort</td>
+                    <td>Flight + Cab</td>
+                    <td>₹8,999 / Person</td>
+                    <td><a href="/contact?place=Goa Beach" class="book-btn">Book Now</a></td>
+                </tr>
+                <tr>
+                    <td>Ooty<br><small>Tamil Nadu</small></td>
+                    <td>3D / 2N</td>
+                    <td>Breakfast + Dinner</td>
+                    <td>Hill View Hotel</td>
+                    <td>AC Bus</td>
+                    <td>₹6,499 / Person</td>
+                    <td><a href="/contact?place=Ooty" class="book-btn">Book Now</a></td>
+                </tr>
+                <tr>
+                    <td>Coorg<br><small>Karnataka</small></td>
+                    <td>3D / 2N</td>
+                    <td>Breakfast</td>
+                    <td>Nature Resort</td>
+                    <td>AC Bus</td>
+                    <td>₹7,499 / Person</td>
+                    <td><a href="/contact?place=Coorg" class="book-btn">Book Now</a></td>
+                </tr>
+                <tr>
+                    <td>Kerala<br><small>God’s Own Country</small></td>
+                    <td>5D / 4N</td>
+                    <td>All Meals</td>
+                    <td>Houseboat</td>
+                    <td>Flight + Cab</td>
+                    <td>₹10,999 / Person</td>
+                    <td><a href="/contact?place=Kerala" class="book-btn">Book Now</a></td>
+                </tr>
+                <tr>
+                    <td>Manali<br><small>Himachal Pradesh</small></td>
+                    <td>5D / 4N</td>
+                    <td>Breakfast + Dinner</td>
+                    <td>Mountain Resort</td>
+                    <td>Volvo Bus</td>
+                    <td>₹11,999 / Person</td>
+                    <td><a href="/contact?place=Manali" class="book-btn">Book Now</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

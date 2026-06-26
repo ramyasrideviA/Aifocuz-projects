@@ -1,0 +1,13 @@
+package com.travel.travelwebsite;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class TravelwebsiteApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
