@@ -19,7 +19,7 @@ public class Booking {
     private String destination;
     private String message;
 
-    // ✅ Getters and Setters
+    //  Getters and Setters
     public Long getId() {
         return id;
     }

@@ -5,7 +5,7 @@
     <link rel="stylesheet" th:href="@{/css/contact.css}">
 </head>
 <body>
-    <!-- 🌍 Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">Travel Explorer</div>
         <ul class="nav-links">
@@ -15,7 +15,7 @@
         </ul>
     </nav>
 
-    <!-- 💬 Contact Section -->
+    <!--  Contact Section -->
     <section class="contact-section">
         <div class="contact-container">
             <div class="form-box">
@@ -30,11 +30,7 @@
     <input type="text" name="destination" th:value="${selectedPlace}" placeholder="Selected Destination" readonly>
     <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
     <button type="submit" class="btn">Send Message</button>
-</form>
-
-
-
-
+           </form>
                 <div class="contact-info">
                     <p><strong>Email Us:</strong> info@travelexplorer.com</p>
                     <p><strong>Call Us:</strong> +123 456 7890</p>
@@ -68,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
     travelDateInput.max = formatDate(maxDate);
 });
 
-// ✅ Validation runs when form is submitted
+//  Validation runs when form is submitted
 function validateForm() {
     // Phone validation: must be 10 digits
     const phone = document.getElementById("phone").value;
